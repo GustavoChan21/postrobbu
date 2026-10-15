@@ -25,3 +25,10 @@ Abre `index.html` directamente en tu navegador. También puedes usar `python3 -m
 
 ## Importante
 Las operaciones de caja, PMS y habitación son simulaciones; no existe conexión con terminal bancaria ni bases remotas. Las validaciones de inventario son demostrativas. Para producción hace falta backend transaccional, permisos, auditoría y sincronización multi-dispositivo.
+
+
+## Mejoras touch y KDS
+- Stepper de cantidades con botones táctiles de 52 px (60 px en móvil) y valor central.
+- Cocina en 4 columnas: Nuevo, En preparación, Listo y Entregado.
+- Cada comanda muestra progreso visual, etapas y tiempo transcurrido.
+- El historial `history` de estados se guarda en la base demo del navegador.
