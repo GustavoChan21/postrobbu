@@ -1,3 +1,19 @@
+# POSTROBBU · KDS Board verificado (v3)
+
+Esta versión trae cuatro columnas **Nuevo**, **En preparación**, **Listo**, **Entregado** y ocho comandas precargadas. Abre `index.html?view=kds` o desde el menú **Cocina / KDS**.
+
+## Pruebas
+
+Ejecuta `node verify-board.cjs`: valida 4 columnas, 8 tarjetas, etiquetas, cambio de estado y persistencia en localStorage. GitHub Actions ejecuta esta prueba antes de desplegar.
+
+## GitHub Pages
+
+Subir el **contenido** de este ZIP a la raíz de `GustavoChan21/POSTROBBU`, reemplazando los archivos viejos. Settings → Pages → GitHub Actions. La ruta publicada al KDS es `https://gustavochan21.github.io/POSTROBBU/?view=kds`.
+
+En la vista debe aparecer **KANBAN v3 · 15 OCT**. Si no aparece, la versión publicada es anterior.
+
+El modo demo funciona sin Supabase; su base es localStorage, no sincronizada entre navegadores. El drag de mouse y el gesto touch tienen implementación, pero requieren comprobación en dispositivos reales.
+
 # POSTROBBU · Hotel POS (demo estática)
 
 Basado en la estrategia de **GroceryStore**: `index.html`, `style.css` y JavaScript plano desde la raíz, **sin Node, Vite, React, npm ni Supabase** para operar esta versión de demostración.
