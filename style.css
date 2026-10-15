@@ -20,3 +20,6 @@
 .kds-wrap .kds-ticket{display:block;width:100%;min-width:0;box-sizing:border-box}
 .kds-column.stage-0{border-top:5px solid #728699}.kds-column.stage-1{border-top:5px solid #e18c35}.kds-column.stage-2{border-top:5px solid #32946e}.kds-column.stage-3{border-top:5px solid #486f96}
 @media(max-width:1150px){.kds-wrap .kds-board{grid-template-columns:repeat(4,minmax(265px,1fr)) !important}}
+
+/* Navegación directa sin colisiones con app.js */
+#nav .kds-link{display:block;width:100%;text-decoration:none;color:#bdcbd3;padding:16px 18px;font-weight:650;border-radius:10px;box-sizing:border-box}#nav .kds-link:hover{background:#365061;color:#fff}

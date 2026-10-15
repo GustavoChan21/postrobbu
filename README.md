@@ -1,14 +1,16 @@
-# POSTROBBU - KDS Board Jira V4
+# POSTROBBU — Kanban V5
 
-## Entrada directa al tablero
-Abrir `kds.html` (o `https://gustavochan21.github.io/POSTROBBU/kds.html`) para ver las 4 columnas del tablero sin pasar por la antigua vista KDS. En `index.html`, seleccionar Cocina/KDS abre este tablero.
+Aplicación completamente estática, sin compilación, sin Supabase. Subir TODOS los archivos a la **raíz** de `GustavoChan21/POSTROBBU` (única excepción `.github/workflows/pages.yml`).
 
-## Instalación
-No requiere npm, Vite, React o Supabase. Todos los archivos de la aplicación se encuentran en la raíz. GitHub Pages: Settings > Pages > GitHub Actions. El flujo está en `.github/workflows/pages.yml` porque GitHub lo exige.
+**Importante:** eliminar versiones antiguas de `index.html`, `app.js` y `kds.html` al subir estos archivos. Configurar Settings → Pages → GitHub Actions y confirmar el despliegue.
 
-## Pruebas
-`node --check app.js && node --check kds.js && node --check seed.js`.
+- POS: `https://gustavochan21.github.io/POSTROBBU/`
+- KDS DIRECTO: `https://gustavochan21.github.io/POSTROBBU/kds.html?v=kanban-v5`
 
-La base de prueba utiliza localStorage con 8 comandas repartidas entre los cuatro estados. El botón Reiniciar tablero regenera las 8 comandas. Interacciones: arrastrar mouse, arrastrar touch y cambiar mediante select o flecha. Si la URL antigua muestra una caché previa, navegar directamente a `/POSTROBBU/kds.html`.
+El menú Cocina / KDS contiene un **enlace HTML directo** a `kds.html`; evita completamente ejecutar la vista anterior de `app.js`.
+`kds.html` tiene cuatro columnas en HTML inicial; `kds.js` muestra las comandas demo y maneja arrastrar/soltar, selector y botón de avance.
 
-Es una demo local y pagos simulados; no sincroniza múltiples equipos ni está conectada a Supabase.
+Para probar localmente: `python3 -m http.server 8080`, luego abrir `http://localhost:8080/kds.html`. La base demo es independiente en cada navegador mediante localStorage, sin sincronización.
+
+## Comprobaciones
+`node --check app.js; node --check seed.js; node --check kds.js; node verify-board.cjs`
