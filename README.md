@@ -32,3 +32,7 @@ Las operaciones de caja, PMS y habitación son simulaciones; no existe conexión
 - Cocina en 4 columnas: Nuevo, En preparación, Listo y Entregado.
 - Cada comanda muestra progreso visual, etapas y tiempo transcurrido.
 - El historial `history` de estados se guarda en la base demo del navegador.
+
+
+## KDS estilo Jira (nuevo)
+El KDS presenta cuatro columnas: **Nuevo**, **En preparación**, **Listo** y **Entregado**. Las tarjetas se pueden arrastrar entre columnas con mouse. En pantallas touch utiliza el asa `⠿ Arrastrar comanda` para moverlas con el dedo. Como alternativa accesible, cada tarjeta incluye un selector **Cambiar estado** y un botón para avanzar. Los cambios se registran localmente en `history` con fecha y hora y persisten después de recargar.
