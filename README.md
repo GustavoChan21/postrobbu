@@ -36,3 +36,9 @@ Las operaciones de caja, PMS y habitación son simulaciones; no existe conexión
 
 ## KDS estilo Jira (nuevo)
 El KDS presenta cuatro columnas: **Nuevo**, **En preparación**, **Listo** y **Entregado**. Las tarjetas se pueden arrastrar entre columnas con mouse. En pantallas touch utiliza el asa `⠿ Arrastrar comanda` para moverlas con el dedo. Como alternativa accesible, cada tarjeta incluye un selector **Cambiar estado** y un botón para avanzar. Los cambios se registran localmente en `history` con fecha y hora y persisten después de recargar.
+
+## KDS tablero Jira (versión actualizada)
+- **Cuatro columnas permanentes**: Nuevo, En preparación, Listo, Entregado.
+- En primer arranque se precargan **8 comandas de ejemplo**, distribuidas 3/2/2/1 entre columnas para mostrar el tablero completo. Se conservan en localStorage.
+- Mover entre columnas arrastrando la tarjeta (mouse), desde el asa «Mover tarjeta» (touch), seleccionando el estado o pulsando la flecha.
+- Para reiniciar la demo y ver los 8 ejemplos, ir a Configuración > Restablecer demo.
